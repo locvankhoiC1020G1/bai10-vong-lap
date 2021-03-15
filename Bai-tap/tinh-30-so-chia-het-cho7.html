@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính 30 số chia hết cho 7</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let count = 0;
+    let i = 0;
+    let b = +prompt("nhập số:")
+    while (true) {
+        if (a % 7 === 0) {
+            a += 7;
+            i += a;
+            count++;
+        }
+        if (count === b) {
+            break;
+        }
+    }
+    document.write("tổng" + b + " số đầu tiên chia hết cho 7 là:" + i);
+</script>
+</body>
+</html>

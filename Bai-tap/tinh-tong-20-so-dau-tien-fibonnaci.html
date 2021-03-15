@@ -10,18 +10,20 @@
     let a = 0;
     let b = 1;
     let c;
+    let i;
     let count = 0;
     let num = +prompt("in ra so luong can tim");
     while (true) {
         c = a + b;
         a = b;
         b = c;
+        i = c +b;
         count++;
         if (count == num) {
             break;
         }
-        document.write(c);
-    }
+    }        document.write("tổng các số là: "+i);
+
 
 </script>
 </body>
