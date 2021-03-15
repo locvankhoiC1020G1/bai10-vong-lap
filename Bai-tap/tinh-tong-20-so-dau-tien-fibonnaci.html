@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fibonacci</title>
+</head>
+<body>
+<script>
+
+    let a = 0;
+    let b = 1;
+    let c;
+    let count = 0;
+    let num = +prompt("in ra so luong can tim");
+    while (true) {
+        c = a + b;
+        a = b;
+        b = c;
+        count++;
+        if (count == num) {
+            break;
+        }
+        document.write(c);
+    }
+
+</script>
+</body>
+</html>
